@@ -1,0 +1,165 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: hsl(27, 66%, 92%);
+  width: 100%;
+  height: 100vh;
+
+  font-family: 'DM Sans', sans-serif;
+  font-size: 18px;
+}
+
+.wrapper {
+
+  margin: 8rem auto 0;
+  width: 550px;
+  
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  align-content: center;
+  flex-direction: column;
+}
+header, main {
+  width: 100%;
+  padding: 1.8rem;
+  border-radius: 1em;
+
+}
+header {
+  margin-bottom: 2em;
+  background: url('./../../images/logo.svg') no-repeat 90% 50%, hsl(10, 79%, 65%) ;
+  color: #fff;
+
+}
+header h1 {
+  font-size: 18px;
+  font-weight: 400;
+
+  margin-bottom: .3em;
+}
+header p {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+main {
+  background: hsl(33, 100%, 98%);
+}
+#acquisitions {
+  margin-top: 1rem;
+}
+main .darkBrown:first-child {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+main footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  align-items: center;
+
+  margin-top: 2em;
+  padding-top: 2em;
+  border-top: solid .2em hsl(27, 66%, 92%)
+}
+
+.darkBrown {
+  color: hsl(25, 47%, 15%);
+  font-weight: 700;
+}
+.softBrown {
+  color: hsl(28, 10%, 53%);
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.left .darkBrown {
+  font-size: 3rem;
+}
+.left .softBrown {
+  font-weight: 400; 
+}
+.right {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: flex-end;
+}
+.right .softBrown {
+  text-align: right;
+}
+
+body > footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  
+  width: 100%;
+}
+
+@media (max-width: 560px) {
+  .wrapper {
+    margin: 1rem auto 0;
+    width: 90%;
+  }
+
+  header, main {
+    padding: 1.2rem;
+  }
+  header {
+    margin-bottom: 1em;
+  }
+  header h1 {
+    font-size: 1rem;
+    font-weight: 400;
+  
+    margin-bottom: .15rem;
+  }
+  header p {
+    font-size: 1.6rem;
+  }
+  header, main {
+    padding: 1.5rem 1rem;
+  }
+  main .darkBrown:first-child {
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+main footer {
+  margin-top: 1em;
+  padding-top: 1em;
+}
+
+.softBrown {
+  font-size: .8rem;
+}
+
+.left .darkBrown {
+  font-size: 1.58rem;
+}
+
+.right {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: flex-end;
+}
+.right .softBrown {
+  text-align: right;
+}
+
+body > footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  
+  width: 100%;
+}
+
+}
